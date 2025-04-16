@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Starter Website</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header / Navbar -->
+  <header class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">MySite</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-100 py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
+      <p class="text-lg mb-6">This is your beautiful first page with a simple design.</p>
+      <a href="#design" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Explore Design Section</a>
+    </div>
+  </section>
+
+  <!-- 🔥 Design Section -->
+  <section id="design" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-10">Design Section</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 border rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Clean Layout</h4>
+          <p class="text-gray-600">Well-structured, minimal and professional layout for easy customization.</p>
+        </div>
+        <div class="p-6 border rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Responsive Design</h4>
+          <p class="text-gray-600">Fully responsive and mobile-friendly design out of the box.</p>
+        </div>
+        <div class="p-6 border rounded shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Easy to Customize</h4>
+          <p class="text-gray-600">Use Tailwind or your own CSS to quickly modify this template.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-16 text-center">
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
