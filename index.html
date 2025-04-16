@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Starter Website</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Optional external CSS -->
+  <style>
+    /* Basic styling (can remove and use external CSS instead) */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #eaeaea;
+    }
+    .design-section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-top: 2px solid #ddd;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: white;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body>
 
-  <!-- Header / Navbar -->
-  <header class="bg-blue-600 text-white p-4 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">MySite</h1>
-      <nav class="space-x-4">
-        <a href="#" class="hover:underline">Home</a>
-        <a href="#" class="hover:underline">About</a>
-        <a href="#" class="hover:underline">Contact</a>
-      </nav>
-    </div>
+  <!-- Header -->
+  <header>
+    <h1>My Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gray-100 py-20 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-4">Welcome to My Website</h2>
-      <p class="text-lg mb-6">This is your beautiful first page with a simple design.</p>
-      <a href="#design" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Explore Design Section</a>
-    </div>
+  <!-- Hero / Landing Section -->
+  <section class="hero">
+    <h2>Welcome to My Website</h2>
+    <p>This is the first page of your website.</p>
   </section>
 
-  <!-- 🔥 Design Section -->
-  <section id="design" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h3 class="text-3xl font-bold text-center mb-10">Design Section</h3>
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div class="p-6 border rounded shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Clean Layout</h4>
-          <p class="text-gray-600">Well-structured, minimal and professional layout for easy customization.</p>
-        </div>
-        <div class="p-6 border rounded shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Responsive Design</h4>
-          <p class="text-gray-600">Fully responsive and mobile-friendly design out of the box.</p>
-        </div>
-        <div class="p-6 border rounded shadow hover:shadow-lg transition">
-          <h4 class="text-xl font-semibold mb-2">Easy to Customize</h4>
-          <p class="text-gray-600">Use Tailwind or your own CSS to quickly modify this template.</p>
-        </div>
-      </div>
-    </div>
+  <!-- Design Section -->
+  <section class="design-section">
+    <h3>Design Section</h3>
+    <p>This section is where you describe your design features, services, or portfolio.</p>
+    <ul>
+      <li>✅ Clean UI</li>
+      <li>✅ Responsive layout</li>
+      <li>✅ Easy to customize</li>
+    </ul>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-6 mt-16 text-center">
-    <p>&copy; 2025 MySite. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
   </footer>
 
 </body>
